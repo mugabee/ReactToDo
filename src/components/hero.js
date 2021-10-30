@@ -1,6 +1,6 @@
 import hero from "../backGround.jpeg"
 
-const hero = () => {
+const Hero = () => {
     return (
         <>
         <img src="{hero}" alt="" />
@@ -9,4 +9,4 @@ const hero = () => {
     )
 }
 
-export default hero
+export default Hero
