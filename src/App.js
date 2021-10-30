@@ -1,3 +1,4 @@
+import Logo from "./components/Logo"
 const App = () => {
   return (
     <>
