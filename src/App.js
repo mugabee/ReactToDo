@@ -16,7 +16,7 @@ const App = () => {
 
         const newItems ={
             id: uuidv4(),
-            tittle: text,
+            title: text,
         }
         //Using the spread operator for the old items to  remain while adding the new ones
         setItems([newItems, ...items])
@@ -42,7 +42,7 @@ const App = () => {
 
                  />        
                 </form>  
-                <List />
+                <List items={items} />
             </main> 
         </>
     )

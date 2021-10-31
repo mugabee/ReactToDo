@@ -1,7 +1,13 @@
-const List = () => {
+const List = ({ items }) => {
     return (
         <>
-            <h2 className="font-bold text-8xl">List Component</h2>
+        <article>
+            <ul>
+                {items.map(({id, title }) => (
+                    <li key={id}>{title}</li>
+                ))}
+            </ul>
+        </article>
         </>
     )
 }
