@@ -1,4 +1,4 @@
-const Logo = () => {
+const Title = () => {
     return (
         <>
         <header className="flex items-center justify-center">
@@ -9,4 +9,4 @@ const Logo = () => {
     )
 }
 
-export default Logo
+export default Title

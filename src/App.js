@@ -1,14 +1,24 @@
-import { useState } from "react"
-import Logo from "./components/Logo"
-import Hero from "./components/Hero"
+import { useState, useEffect } from "react"
+import Logo from "./components/Title"
 import List from "./components/List"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
 
+// passing the items to the local storage, just to keep our data incase we reload the page
+const getLocalStorage = () => {
+    let items = localStorage.getItem("items")
+
+    if(items){
+        return JSON.parse(localStorage.getItem("items"))
+    } else {
+        return []
+    }
+}
+
 const App = () => {
     //to catch and insert the text
     const [text, setText] = useState("")
-    const [items, setItems] = useState([])
+    const [items, setItems] = useState(getLocalStorage())
 
     // to remove the loading event after text input
     const handleSubmit = (e) => {
@@ -23,11 +33,19 @@ const App = () => {
         //setting our input back to empty after inserting the to do text
         setText("")
     }
+
+    const deleteItem = (id) => {
+        setItems(items.filter((item)=> item.id !==id))
+    }
+    useEffect(() => {
+        localStorage.setItem("items", JSON.stringify(items))
+    }, [items]
+    )
+
     return ( 
         <>       
             <main>        
-                <Logo />        
-                <Hero />  
+                <Logo />         
 
                 <form className="flex item-center justify-center mt-10"
                 onSubmit={handleSubmit}>        
@@ -42,7 +60,7 @@ const App = () => {
 
                  />        
                 </form>  
-                <List items={items} setItems={setItems} />
+                <List items={items} setItems={setItems} deleteItem={deleteItem}/>
             </main> 
         </>
     )

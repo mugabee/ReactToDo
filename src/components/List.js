@@ -1,6 +1,6 @@
 import { IoClose } from  "react-icons/io5"
 
-const List = ({ items, setItems }) => {
+const List = ({ items, setItems, deleteItem }) => {
     return (
         <>
         <article >
@@ -8,11 +8,12 @@ const List = ({ items, setItems }) => {
                 {items.map(({id, title }) => (
                     <ul className="flex border-b px-8 border-gray-600 justify-between">
                         <li key={id}
-                        className="todo-list text-white  py-3 py-2 tracking-wider  "
+                        className="todo-list text-white  py-3 tracking-wider  "
                         >
                             {title}
                         </li>
-                        <button className="text-xl">
+                        <button className="text-xl"
+                        onClick ={() => deleteItem(id)}  >
                             <IoClose className="text-red-500" />
                         </button>
 
