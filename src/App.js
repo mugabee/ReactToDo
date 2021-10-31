@@ -42,7 +42,7 @@ const App = () => {
 
                  />        
                 </form>  
-                <List items={items} />
+                <List items={items} setItems={setItems} />
             </main> 
         </>
     )

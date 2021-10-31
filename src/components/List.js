@@ -1,6 +1,6 @@
 import { IoClose } from  "react-icons/io5"
 
-const List = ({ items }) => {
+const List = ({ items, setItems }) => {
     return (
         <>
         <article >
@@ -19,14 +19,17 @@ const List = ({ items }) => {
 
                     </ul>
                 ))}
-                <ul>
+                <ul className="flex items-center justify-between px-5 py-3">
                     <li>
                         <p className="text-sm text-gray-400">
-                            {items.length} Total ToDo
+                             You have {items.length} Tasks
                         </p>
                     </li>
                     <li>
-                        <button>Clear List</button>
+                        <button className="text-sm text-gray-400"
+                        onClick= {() => setItems([])}
+                        >Clear List
+                        </button>
                     </li>
                 </ul>
             </ul>
