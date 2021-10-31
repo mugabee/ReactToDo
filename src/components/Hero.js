@@ -1,12 +1,13 @@
 import hero from "../backGround.jpeg"
 
-const hero = () => {
+const Hero = () => {
     return (
         <>
-        <img src="{hero}" alt="" />
-            
+        <section>
+            <img src={hero} alt="" />
+        </section>            
         </>
     )
 }
 
-export default hero
+export default Hero

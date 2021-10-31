@@ -1,12 +1,12 @@
-const logo = () => {
+const Logo = () => {
     return (
         <>
-        <header>
-            <h1>To Do</h1>
+        <header className="flex items-center justify-center">
+            <h1 className="text-2xl text-black mt-10 font-bold uppercase tracking-widest">To Do</h1>
         </header>
             
         </>
     )
 }
 
-export default logo
+export default Logo
