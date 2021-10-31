@@ -4,7 +4,7 @@ const List = ({ items, setItems, deleteItem }) => {
     return (
         <>
         <article >
-            <ul className="bg-gray-700 mx-5  rounded-lg mt-10">
+            <ul className="bg-gray-700 mx-5 sm:max-w-xl sm:mx-auto rounded-lg mt-10">
                 {items.map(({id, title }) => (
                     <ul className="flex border-b px-8 border-gray-600 justify-between">
                         <li key={id}
