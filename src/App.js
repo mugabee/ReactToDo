@@ -2,6 +2,8 @@ import { useState } from "react"
 import Logo from "./components/Logo"
 import Hero from "./components/Hero"
 import List from "./components/List"
+//Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
+import {v4 as uuidv4} from "uuid"
 
 const App = () => {
     //to catch and insert the text
@@ -11,6 +13,13 @@ const App = () => {
     // to remove the loading event after text input
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        const newItems ={
+            id: uuidv4(),
+            tittle: text
+        }
+        //Using the spread operator for the old items to  remain while adding the new ones
+        setItems([newItems, ...items])
     }
     return ( 
         <>       
