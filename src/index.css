@@ -7,3 +7,7 @@ body {
     sans-serif;
   }
 
+  .todo-list:last-child{
+    border-bottom: none;
+  }
+
