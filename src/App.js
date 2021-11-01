@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react"
-import Logo from "./components/Title"
+import Title from "./components/Title"
 import List from "./components/List"
+import Footer from "./components/Footer"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
+
+
 
 // passing the items to the local storage, just to keep our data incase we reload the page
 const getLocalStorage = () => {
@@ -30,7 +33,6 @@ const App = () => {
         }
         //Using the spread operator for the old items to  remain while adding the new ones
         setItems([newItems, ...items])
-        //setting our input back to empty after inserting the to do text
         setText("")
     }
 
@@ -44,8 +46,21 @@ const App = () => {
 
     return ( 
         <>       
-            <main>        
-                <Logo />         
+            <main>   
+                {/* <h1 className="pt-8 m-auto items-center"> welcome 
+                <span className="text-red-500 font-medium ml-10">
+                    <Typewriter
+                        loop
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={50}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                        words={['good', 'happy']}
+                    />
+                </span>
+                </h1>      */}
+                <Title />         
 
                 <form className="flex item-center justify-center mt-10"
                 onSubmit={handleSubmit}>        
@@ -61,6 +76,7 @@ const App = () => {
                  />        
                 </form>  
                 <List items={items} setItems={setItems} deleteItem={deleteItem}/>
+                <Footer />
             </main> 
         </>
     )
