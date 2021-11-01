@@ -47,33 +47,36 @@ const App = () => {
     )
 
     return ( 
-        <>       
-            <main className="bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">   
-                {/* <h1 className="pt-8 m-auto items-center"> welcome 
-                <span className="text-red-500 font-medium ml-10">
-                    <Typewriter
-                        loop
-                        cursor
-                        cursorStyle="_"
-                        typeSpeed={50}
-                        deleteSpeed={50}
-                        delaySpeed={1000}
-                        words={['good', 'happy']}
-                    />
-                </span>
-                </h1>      */}
-                <Title />         
+        <> 
+            <div>
+                <main className="h-screen bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">   
+                    {/* <h1 className="pt-8 m-auto items-center"> welcome 
+                    <span className="text-red-500 font-medium ml-10">
+                        <Typewriter
+                            loop
+                            cursor
+                            cursorStyle="_"
+                            typeSpeed={50}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                            words={['good', 'happy']}
+                        />
+                    </span>
+                    </h1>      */}
+                    <Title />         
 
-                <form className="flex item-center justify-center mt-10"
-                onSubmit={handleSubmit}>  
-                <AddItinerary setText={setText} text={text}/>     
-               
-                 <Button />
-      
-                </form>  
-                <MainSection items={items} setItems={setItems} deleteItem={deleteItem}/>
-                <Footer />
-            </main> 
+                    <form className="flex item-center justify-center mt-10"
+                    onSubmit={handleSubmit}>  
+                    <AddItinerary setText={setText} text={text}/>     
+                
+                    <Button />
+        
+                    </form>  
+                    <MainSection items={items} setItems={setItems} deleteItem={deleteItem}/>
+                    <Footer />
+                </main> 
+
+            </div>      
         </>
     )
 }
