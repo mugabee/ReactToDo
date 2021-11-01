@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import Title from "./components/Title"
-import List from "./components/List"
+import MainSection from "./components/MainSection"
 import Footer from "./components/Footer"
 import Button from "./components/Button"
+import AddItinerary from "./components/AddItinerary"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
 
@@ -64,21 +65,13 @@ const App = () => {
                 <Title />         
 
                 <form className="flex item-center justify-center mt-10"
-                onSubmit={handleSubmit}>        
-                <input
-                    type="text"
-                    name="text"
-                    placeholder="Enter Your To do item"
-                    className="py-2 px-5 rounded-lg bg-gray-700 text-white tracking-wide"
-                    value={text}
-                    onChange={(e) => setText(e.target.value)}
-                    
-
-                 /> 
+                onSubmit={handleSubmit}>  
+                <AddItinerary setText={setText} text={text}/>     
+               
                  <Button />
       
                 </form>  
-                <List items={items} setItems={setItems} deleteItem={deleteItem}/>
+                <MainSection items={items} setItems={setItems} deleteItem={deleteItem}/>
                 <Footer />
             </main> 
         </>

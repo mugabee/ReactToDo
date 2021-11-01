@@ -1,7 +1,7 @@
 import { MdDeleteForever } from  "react-icons/md"
 import { FaEdit } from "react-icons/fa"
 
-const List = ({ items, setItems, deleteItem }) => {
+const MainSection = ({ items, setItems, deleteItem }) => {
     return (
         <>
         <article >
@@ -47,4 +47,4 @@ const List = ({ items, setItems, deleteItem }) => {
     )
 }
 
-export default List
+export default MainSection
