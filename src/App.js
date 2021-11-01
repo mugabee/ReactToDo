@@ -48,7 +48,7 @@ const App = () => {
 
     return ( 
         <>       
-            <main className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">   
+            <main className="bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">   
                 {/* <h1 className="pt-8 m-auto items-center"> welcome 
                 <span className="text-red-500 font-medium ml-10">
                     <Typewriter
