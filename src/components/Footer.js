@@ -1,14 +1,11 @@
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer bg-white  pt-1 ">
-        <div className="container mx-auto px-6">
-          
-        </div>
+        <footer className="footer pt-1 ">
+        
         <div className="mx-auto px-6">
-          <div className="mt-16  border-gray-300 flex flex-col items-center">
+          <div className="mt-16   flex flex-col items-center">
             <div className="sm:w-2/3 text-center py-6">
-              <p className="text-sm text-black font-bold mb-2"> Copyright © 2021</p>
+              <p className="text-sm text-white font-bold mb-2"> Copyright © 2021</p>
               <p className="text-sm text-blue-500 font-bold mb-2"> About</p>
            
 
@@ -16,8 +13,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-            
-        </div>
+   
     )
 }
 
