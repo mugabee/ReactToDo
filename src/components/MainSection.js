@@ -15,11 +15,11 @@ const MainSection = ({ items, setItems, deleteItem }) => {
                         </li>
                         <li className="pt-4 ">
                         <button className="text-xl mx-2">
-                            <FaEdit className="text-red-500" />
+                            <FaEdit className="text-red-500 hover:text-green-500" />
                         </button>
-                        <button className="text-xl mx-2"
+                        <button className="text-xl mx-2 "
                         onClick ={() => deleteItem(id)}  >
-                            <MdDeleteForever className="text-red-500" />
+                            <MdDeleteForever className="text-red-500  hover:text-green-500" />
                         </button>
                         
                         </li>
