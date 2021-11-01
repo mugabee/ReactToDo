@@ -12,10 +12,16 @@ const List = ({ items, setItems, deleteItem }) => {
                         >
                             {title}
                         </li>
+                        <li>
                         <button className="text-xl"
                         onClick ={() => deleteItem(id)}  >
                             <IoClose className="text-red-500" />
                         </button>
+                        <button className="text-xl">
+                            <IoClose className="text-red-500" />
+                        </button>
+                        </li>
+                        
 
 
                     </ul>
