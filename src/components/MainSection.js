@@ -5,11 +5,11 @@ const MainSection = ({ items, setItems, deleteItem }) => {
     return (
         <>
         <article >
-            <ul className="bg-gray-700 mx-5 sm:max-w-xl sm:mx-auto rounded-lg mt-10">
+            <ul className="bg-gray-700 mx-5 sm:max-w-xl sm:mx-auto rounded-lg mt-4">
                 {items.map(({id, title }) => (
                     <ul className="flex border-b px-8 border-gray-600 justify-between">
                         <li key={id}
-                        className="todo-list text-white  py-3 tracking-wider  "
+                        className="todo-list text-white  py-3   "
                         >
                             {title}
                         </li>

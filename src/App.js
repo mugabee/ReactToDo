@@ -48,8 +48,9 @@ const App = () => {
 
     return ( 
         <> 
-            <div>
-                <main className="h-screen bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">   
+            
+            <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
+                <div className="lg:mx-64 border rounded-2xl border-red-100 bg-gray-300 ">   
                     {/* <h1 className="pt-8 m-auto items-center"> welcome 
                     <span className="text-red-500 font-medium ml-10">
                         <Typewriter
@@ -74,9 +75,10 @@ const App = () => {
                     </form>  
                     <MainSection items={items} setItems={setItems} deleteItem={deleteItem}/>
                     <Footer />
-                </main> 
+                </div> 
+            </main> 
 
-            </div>      
+      
         </>
     )
 }
