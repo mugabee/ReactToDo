@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Title from "./components/Title"
 import List from "./components/List"
 import Footer from "./components/Footer"
+import Button from "./components/Button"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
 
@@ -73,7 +74,9 @@ const App = () => {
                     onChange={(e) => setText(e.target.value)}
                     
 
-                 />        
+                 /> 
+                 <Button />
+      
                 </form>  
                 <List items={items} setItems={setItems} deleteItem={deleteItem}/>
                 <Footer />

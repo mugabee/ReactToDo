@@ -1,4 +1,5 @@
-import { IoClose } from  "react-icons/io5"
+import { MdDeleteForever } from  "react-icons/md"
+import { FaEdit } from "react-icons/fa"
 
 const List = ({ items, setItems, deleteItem }) => {
     return (
@@ -12,14 +13,15 @@ const List = ({ items, setItems, deleteItem }) => {
                         >
                             {title}
                         </li>
-                        <li>
-                        <button className="text-xl"
+                        <li className="pt-4 ">
+                        <button className="text-xl mx-2">
+                            <FaEdit className="text-red-500" />
+                        </button>
+                        <button className="text-xl mx-2"
                         onClick ={() => deleteItem(id)}  >
-                            <IoClose className="text-red-500" />
+                            <MdDeleteForever className="text-red-500" />
                         </button>
-                        <button className="text-xl">
-                            <IoClose className="text-red-500" />
-                        </button>
+                        
                         </li>
                         
 
