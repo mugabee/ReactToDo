@@ -8,7 +8,6 @@ import AddItinerary from "./components/AddItinerary"
 import {v4 as uuidv4} from "uuid"
 
 
-
 // passing the items to the local storage, just to keep our data incase we reload the page
 const getLocalStorage = () => {
     let items = localStorage.getItem("items")
@@ -50,20 +49,8 @@ const App = () => {
         <> 
             
             <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
-                <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 ">   
-                    {/* <h1 className="pt-8 m-auto items-center"> welcome 
-                    <span className="text-red-500 font-medium ml-10">
-                        <Typewriter
-                            loop
-                            cursor
-                            cursorStyle="_"
-                            typeSpeed={50}
-                            deleteSpeed={50}
-                            delaySpeed={1000}
-                            words={['good', 'happy']}
-                        />
-                    </span>
-                    </h1>      */}
+                <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 ">  
+                   
                     <Title />         
 
                     <form className="flex item-center justify-center mt-10"
