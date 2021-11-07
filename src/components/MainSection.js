@@ -1,4 +1,5 @@
 import { MdDeleteForever } from  "react-icons/md"
+import { MdDone } from  "react-icons/md"
 import { FaEdit } from "react-icons/fa"
 
 const MainSection = ({ items, setItems, deleteItem }) => {
@@ -16,6 +17,10 @@ const MainSection = ({ items, setItems, deleteItem }) => {
                         <li className="pt-4 ">
                         <button className="text-xl mx-2">
                             <FaEdit className="text-red-500 hover:text-green-500" />
+                        </button>
+                        <button className="text-xl mx-2 "
+                        onClick ={() => deleteItem(id)}  >
+                            <MdDone className="text-red-500  hover:text-green-500" />
                         </button>
                         <button className="text-xl mx-2 "
                         onClick ={() => deleteItem(id)}  >
