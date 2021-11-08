@@ -118,6 +118,15 @@ const App = () => {
             <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
                 <Navbar />
                 <div>
+                    <Calendar
+                    localizer={localizer}
+                    events={events}
+                    startAccessor="start"
+                    endAccessor="end"
+                    style={{height:500, margin: "50px"}}
+                    />
+                </div>
+                <div>
                 
           
         
