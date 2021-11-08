@@ -23,13 +23,7 @@ import {v4 as uuidv4} from "uuid"
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
 };
-const localizer = dateFnsLocalizer({
-    format,
-    parse,
-    startOfWeek,
-    getDay,
-    locales,
-});
+
 
 
 
