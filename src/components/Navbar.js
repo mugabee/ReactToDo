@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   constructor() {
@@ -27,7 +22,6 @@ export default class Navbar extends Component {
     const menuClosed =
       "w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20";
     return (
-    <Router>
 
       <nav className="w-full z-30 top-0 text-black py-1 lg:py-6">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
@@ -84,7 +78,7 @@ export default class Navbar extends Component {
           </div>
         </div>
       </nav>
-    </Router>
+
     );
   }
 }
