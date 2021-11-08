@@ -6,6 +6,10 @@ import {
     Link
   } from "react-router-dom";
 
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
+
 export default class Navbar extends Component {
   constructor() {
     super();
@@ -84,13 +88,13 @@ export default class Navbar extends Component {
       </nav>
       <Switch>
           <Route path="/about">
-            <about />
+            <About />
           </Route>
           <Route path="/contact">
-            <contact />
+            <Contact />
           </Route>
           <Route path="/">
-            <home />
+            <Home />
           </Route>
         </Switch>
     </Router>
