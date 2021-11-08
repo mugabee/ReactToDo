@@ -15,7 +15,7 @@ import MainSection from "./components/MainSection"
 import Footer from "./components/Footer"
 
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
-import {v4 as uuidv4} from "uuid"
+
 
 
 
