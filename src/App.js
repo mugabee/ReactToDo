@@ -34,13 +34,13 @@ const events = [
     {
         title: "Big Meeting",
         allDay: true,
-        start: new Date(2021, 6, 0),
-        end: new Date(2021, 6, 0),
+        start: new Date(2021, 11, 0),
+        end: new Date(2021, 11, 0),
     },
     {
         title: "Vacation",
-        start: new Date(2021, 6, 7),
-        end: new Date(2021, 6, 10),
+        start: new Date(2021, 11, 7),
+        end: new Date(2021, 11, 10),
     },
     {
         title: "Conference",
