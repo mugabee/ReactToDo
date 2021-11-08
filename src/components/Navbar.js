@@ -60,7 +60,7 @@ export default class Navbar extends Component {
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
               <li className="mr-3">
                 <Link
-                  to="/home"
+                  to="./Home"
                   className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 >
                   Home
@@ -68,7 +68,7 @@ export default class Navbar extends Component {
               </li>
               <li className="mr-3">
                 <Link
-                  to="/about"
+                  to="./About"
                   className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 >
                   About
@@ -76,7 +76,7 @@ export default class Navbar extends Component {
               </li>
               <li className="mr-3">
                 <Link
-                  to="/contact"
+                  to="./Contact"
                   className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 >
                   Contact
