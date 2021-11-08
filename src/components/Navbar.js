@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import {v4 as uuidv4} from "uuid"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "../pages/About";
-import Contact from "../pages/Contact";
+
 
 import MainSection from "./MainSection";
 import Footer from "./Footer";
