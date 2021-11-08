@@ -31,7 +31,7 @@ export default class Navbar extends Component {
     const menuClosed =
       "w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20";
     return (
-    <Router>
+    // <Router>
       <nav className="w-full z-30 top-0 text-black py-1 lg:py-6">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
           <div className="pl-4 flex items-center">
@@ -86,7 +86,7 @@ export default class Navbar extends Component {
           </div>
         </div>
       </nav>
-      {/* <Switch>
+      /* <Switch>
           <Route path="./About">
             <About />
           </Route>
@@ -96,8 +96,8 @@ export default class Navbar extends Component {
           <Route path="./Home">
             <Home />
           </Route>
-        </Switch> */}
-    </Router>
+        </Switch> */
+    /* </Router> */
     
     );
   }
