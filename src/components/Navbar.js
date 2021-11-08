@@ -89,10 +89,10 @@ const Navbar = () => {
                 <li className="mr-3">
                   {" "}
                   <Link
-                    to="/About"
+                    to="/Add"
                     className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                   >
-                    About
+                    Add
                   </Link>
                 </li>
                 <li className="mr-3">
