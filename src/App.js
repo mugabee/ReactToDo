@@ -1,3 +1,13 @@
+import { Calendar, dateFnsLocalizer } from "react-big-calendar";
+import format from "date-fns/format";
+import parse from "date-fns/parse";
+import startOfWeek from "date-fns/startOfWeek";
+import getDay from "date-fns/getDay";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
+
+
 import { useState, useEffect } from "react"
 import Navbar from "./components/Navbar";
 import Title from "./components/Title"
@@ -8,6 +18,36 @@ import AddItinerary from "./components/AddItinerary"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
 
+
+// all calender
+const locales = {
+    "en-US": require("date-fns/locale/en-US"),
+};
+const localizer = dateFnsLocalizer({
+    format,
+    parse,
+    startOfWeek,
+    getDay,
+    locales,
+});
+const events = [
+    {
+        title: "Big Meeting",
+        allDay: true,
+        start: new Date(2021, 6, 0),
+        end: new Date(2021, 6, 0),
+    },
+    {
+        title: "Vacation",
+        start: new Date(2021, 6, 7),
+        end: new Date(2021, 6, 10),
+    },
+    {
+        title: "Conference",
+        start: new Date(2021, 6, 20),
+        end: new Date(2021, 6, 23),
+    },
+];
 
 
 
