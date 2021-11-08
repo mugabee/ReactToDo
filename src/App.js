@@ -19,10 +19,6 @@ import AddItinerary from "./components/AddItinerary"
 import {v4 as uuidv4} from "uuid"
 
 
-// all calender
-const locales = {
-    "en-US": require("date-fns/locale/en-US"),
-};
 
 
 
