@@ -86,17 +86,17 @@ export default class Navbar extends Component {
           </div>
         </div>
       </nav>
-      /* <Switch>
-          <Route path="./About">
-            <About />
-          </Route>
-          <Route path="./Contact">
-            <Contact />
-          </Route>
-          <Route path="./Home">
-            <Home />
-          </Route>
-        </Switch> */
+    // <Switch>
+    //   <Route path="./About">
+    //      <About />
+    //    </Route>
+    //    <Route path="./Contact">
+    //     <Contact />
+    //    </Route>
+    //    <Route path="./Home">
+    //      <Home />
+    //    </Route>
+    //  </Switch> 
     /* </Router> */
     
     );
