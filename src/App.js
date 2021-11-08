@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Navbar from "./components/Navbar";
 import Title from "./components/Title"
 import MainSection from "./components/MainSection"
 import Footer from "./components/Footer"
@@ -72,6 +73,7 @@ const App = () => {
         <> 
             
             <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
+                <Navbar />
                 <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
                 
                    
