@@ -123,7 +123,7 @@ const App = () => {
                     events={events}
                     startAccessor="start"
                     endAccessor="end"
-                    style={{height:500, margin: "50px"}}
+                    style={{height: 500, margin: "50px"}}
                     />
                 </div>
                 <div>
