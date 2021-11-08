@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
@@ -72,12 +72,13 @@ export default class Navbar extends Component {
                 </Link>
               </li>
               <li className="mr-3">
-                <Link
+              <Route exact path="/" element={<Home/>}/>
+                {/* <Link
                   to="/Contact"
                   className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 >
                   Contact
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>

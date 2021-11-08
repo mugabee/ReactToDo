@@ -79,10 +79,10 @@ const App = () => {
                 {/* <Navbar /> */}
                 <div>
                 
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/About" element={<About/>}/>
-          <Route exact path="/About" element={<Contact/>}/>
           
+          {/* <Route exact path="/About" element={<About/>}/>
+          <Route exact path="/About" element={<Contact/>}/>
+           */}
           
         
 
