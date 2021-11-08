@@ -111,9 +111,7 @@ const Navbar = () => {
           <Route path="/About">
             <About setText={setText} handleSubmit={handleSubmit} text={text} />
           </Route>
-          {/* <Route path="/Contact">
-            <Contact />
-          </Route> */}
+         
           <Route path="/">
           <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
                 
