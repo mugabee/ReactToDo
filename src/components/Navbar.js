@@ -87,13 +87,13 @@ export default class Navbar extends Component {
         </div>
       </nav>
       <Switch>
-          <Route path="/about">
+          <Route path="./About">
             <About />
           </Route>
-          <Route path="/contact">
+          <Route path="./Contact">
             <Contact />
           </Route>
-          <Route path="/">
+          <Route path="./Home">
             <Home />
           </Route>
         </Switch>
