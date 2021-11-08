@@ -7,12 +7,11 @@ import Button from "./components/Button"
 import AddItinerary from "./components/AddItinerary"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 
 
 
@@ -81,10 +80,12 @@ const App = () => {
             <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
                 {/* <Navbar /> */}
                 <div>
-                    <ul>
-                        <Link to="/"><li>Home</li></Link>
-                        <Link to="/about"><li>about</li></Link>
-                    </ul>
+                <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/login" element={<Login/>}/>
+          <Route exact path="/recovery-password" element={<RecoveryPassword/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
 
                 </div>
                 <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
