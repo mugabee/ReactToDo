@@ -86,7 +86,7 @@ export default class Navbar extends Component {
           </div>
         </div>
       </nav>
-      <Switch>
+      {/* <Switch>
           <Route path="./About">
             <About />
           </Route>
@@ -96,7 +96,7 @@ export default class Navbar extends Component {
           <Route path="./Home">
             <Home />
           </Route>
-        </Switch>
+        </Switch> */}
     </Router>
     
     );

@@ -13,9 +13,9 @@ import {
 ReactDOM.render(
   
   <React.StrictMode>
-    <Router>
+    {/* <Router> */}
       <App /> 
-    </Router>
+    {/* </Router> */}
       
 
   </React.StrictMode>,
