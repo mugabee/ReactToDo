@@ -1,17 +1,7 @@
-import { Calendar, dateFnsLocalizer } from "react-big-calendar";
-import format from "date-fns/format";
-import parse from "date-fns/parse";
-import startOfWeek from "date-fns/startOfWeek";
-import getDay from "date-fns/getDay";
-import DatePicker from "react-datepicker";
-
-
-
 
 import { useState, useEffect } from "react"
 import Navbar from "./components/Navbar";
 import Title from "./components/Title"
-import MainSection from "./components/MainSection"
 import Footer from "./components/Footer"
 
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
