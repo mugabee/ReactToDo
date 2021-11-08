@@ -5,7 +5,7 @@ export default class Navbar extends Component {
   constructor() {
     super();
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
     this.openMenu = this.openMenu.bind(this);
   }
@@ -22,17 +22,15 @@ export default class Navbar extends Component {
     const menuClosed =
       "w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20";
     return (
-
       <nav className="w-full z-30 top-0 text-black py-1 lg:py-6">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
           <div className="pl-4 flex items-center">
-              
-            <a
+            <Link
+              to="/"
               className="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-              href="#"
             >
               React Work
-            </a>
+            </Link>
           </div>
 
           <div className="block lg:hidden pr-4">
@@ -51,32 +49,33 @@ export default class Navbar extends Component {
           <div className={isOpen ? menuOpen : menuClosed} id="nav-content">
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
               <li className="mr-3">
-                <a
-                  className="inline-block md:border border-black hover:bg-blue-200 py-2 px-4 text-black font-bold no-underline"
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
+                <Link
+                  to="/"
                   className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                  href="#"
                 >
-                  About Us
-                </a>
+                  ABOUT Us
+                </Link>
               </li>
               <li className="mr-3">
-                  <Link to="/" className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
-
-                   Contact Us
-                   </Link>
+                <Link
+                  to="/"
+                  className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                >
+                  ABOUT Us
+                </Link>
+              </li>
+              <li className="mr-3">
+                <Link
+                  to="/"
+                  className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
     );
   }
 }
