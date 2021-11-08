@@ -13,8 +13,7 @@ import Navbar from "./components/Navbar";
 import Title from "./components/Title"
 import MainSection from "./components/MainSection"
 import Footer from "./components/Footer"
-import Button from "./components/Button"
-import AddItinerary from "./components/AddItinerary"
+
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
 
