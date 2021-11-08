@@ -6,6 +6,7 @@ import { BsCheckAll } from "react-icons/bs"
 
 
 const MainSection = ({ items, setItems, deleteItem, itemComplete, editItems, setEditItems }) => {
+    console.log("hello")
     return (
         <>
         <article >
