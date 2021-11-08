@@ -30,24 +30,6 @@ const localizer = dateFnsLocalizer({
     getDay,
     locales,
 });
-const events = [
-    {
-        title: "Big Meeting",
-        allDay: true,
-        start: new Date(2021, 11, 0),
-        end: new Date(2021, 11, 0),
-    },
-    {
-        title: "Vacation",
-        start: new Date(2021, 11, 7),
-        end: new Date(2021, 11, 10),
-    },
-    {
-        title: "Conference",
-        start: new Date(2021, 6, 20),
-        end: new Date(2021, 6, 23),
-    },
-];
 
 
 
