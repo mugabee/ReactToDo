@@ -8,6 +8,8 @@ import AddItinerary from "./components/AddItinerary"
 import {v4 as uuidv4} from "uuid"
 
 
+
+
 // passing the items to the local storage, just to keep our data incase we reload the page
 const getLocalStorage = () => {
     let items = localStorage.getItem("items")
@@ -21,8 +23,16 @@ const getLocalStorage = () => {
 
 const App = () => {
     //to catch and insert the text
+    const [editItems, setEditItems] = useState(null)
     const [text, setText] = useState("")
     const [items, setItems] = useState(getLocalStorage())
+
+    const getData = (id)=>{
+        fetch("http://localhost:1337/products/${id}",{})
+        .then((response)=>response.json())
+        .then((data)=>setItems(data))
+        .catch(error=>console.log(error))
+    }
 
     // to remove the loading event after text input
     const handleSubmit = (e) => {
@@ -31,10 +41,23 @@ const App = () => {
         const newItems ={
             id: uuidv4(),
             title: text,
+            completed: false,
         }
         //Using the spread operator for the old items to  remain while adding the new ones
         setItems([newItems, ...items])
         setText("")
+    }
+    const itemComplete = (id) =>{
+        console.log(id)
+        setItems(
+            items.map((singleItem) =>{
+                if(singleItem.id === id) {
+                    return{...items, completed: !singleItem.completed}
+                }
+                return singleItem;
+
+            })
+        )
     }
 
     const deleteItem = (id) => {
@@ -56,12 +79,12 @@ const App = () => {
 
                     <form className="flex item-center justify-center mt-10"
                     onSubmit={handleSubmit}>  
-                    <AddItinerary setText={setText} text={text}/>     
+                    <AddItinerary setText={setText} text={text} setEditItems={setEditItems} editItems={editItems} />     
                 
                     <Button />
         
                     </form>  
-                    <MainSection items={items} setItems={setItems} deleteItem={deleteItem}/>
+                    <MainSection items={items} setItems={setItems} deleteItem={deleteItem} setEditItems={setEditItems} itemComplete={itemComplete}/>
                     <Footer />
                 </div> 
             </main> 
