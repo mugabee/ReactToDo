@@ -7,6 +7,12 @@ import Button from "./components/Button"
 import AddItinerary from "./components/AddItinerary"
 //Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
 import {v4 as uuidv4} from "uuid"
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 
 
@@ -73,7 +79,14 @@ const App = () => {
         <> 
             
             <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
-                <Navbar />
+                {/* <Navbar /> */}
+                <div>
+                    <ul>
+                        <Link to="/"><li>Home</li></Link>
+                        <Link to="/about"><li>about</li></Link>
+                    </ul>
+
+                </div>
                 <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
                 
                    
