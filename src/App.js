@@ -80,9 +80,7 @@ const App = () => {
                 <div>
                 
           
-          {/* <Route exact path="/About" element={<About/>}/>
-          <Route exact path="/About" element={<Contact/>}/>
-           */}
+        
           
         
 
