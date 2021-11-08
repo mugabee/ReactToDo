@@ -94,15 +94,7 @@ const Navbar = () => {
                   >
                     Add
                   </Link>
-                </li>
-                {/* <li className="mr-3">
-                  <Link
-                    to="/Contact"
-                    className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                  >
-                    Contact
-                  </Link>
-                </li> */}
+                </li>                
               </ul>
             </div>
           </div>
@@ -121,7 +113,7 @@ const Navbar = () => {
               <Footer />
             </div> 
       
-                    </Route>
+        </Route>
         </Switch>
       </Router>
     </div>
