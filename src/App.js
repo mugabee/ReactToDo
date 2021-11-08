@@ -4,16 +4,6 @@ import Navbar from "./components/Navbar";
 import Title from "./components/Title"
 import Footer from "./components/Footer"
 
-//Universally unique identifier(uuid packages to new items to improve Their uniqueness and low probability in being repeated
-
-
-
-
-
-
-
-
-
 
 // passing the items to the local storage, just to keep our data incase we reload the page
 const getLocalStorage = () => {
