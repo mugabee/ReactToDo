@@ -9,58 +9,58 @@ import Footer from "./Footer";
 import Title from "./Title";
 
 const Navbar = () => {
-  const getLocalStorage = () => {
-    let items = localStorage.getItem("items");
-    console.log(items);
+  // const getLocalStorage = () => {
+  //   let items = localStorage.getItem("items");
+  //   console.log(items);
 
-    if (items) {
-      return JSON.parse(localStorage.getItem("items"));
-    } else {
-      return [];
-    }
-  };
+  //   if (items) {
+  //     return JSON.parse(localStorage.getItem("items"));
+  //   } else {
+  //     return [];
+  //   }
+  // };
 
-  const [editItems, setEditItems] = useState(null);
-  const [text, setText] = useState("");
-  const [dateText, setDate] = useState("");
-  const [timeText, setTime] = useState("");
-  const [items, setItems] = useState(getLocalStorage());
-  console.log(items);
+  // const [editItems, setEditItems] = useState(null);
+  // const [text, setText] = useState("");
+  // const [dateText, setDate] = useState("");
+  // const [timeText, setTime] = useState("");
+  // const [items, setItems] = useState(getLocalStorage());
+  // console.log(items);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    const newItems = {
-      id: uuidv4(),
-      title: text,
-      dates: dateText,
-      timeSet: timeText,
-      completed: false,
-    };
-    //Using the spread operator for the old items to  remain while adding the new ones
-    setItems([newItems, ...items]);
-    setText("");
-    setDate("");
-    setTime("");
-  };
+  //   const newItems = {
+  //     id: uuidv4(),
+  //     title: text,
+  //     dates: dateText,
+  //     timeSet: timeText,
+  //     completed: false,
+  //   };
+  //   //Using the spread operator for the old items to  remain while adding the new ones
+  //   setItems([newItems, ...items]);
+  //   setText("");
+  //   setDate("");
+  //   setTime("");
+  // };
 
-  const itemComplete = (id) => {
-    console.log(id);
-    setItems(
-      items.map((singleItem) =>
-        singleItem.id === id
-          ? { ...singleItem, completed: !singleItem.completed }
-          : singleItem
-      )
-    );
-  };
+  // const itemComplete = (id) => {
+  //   console.log(id);
+  //   setItems(
+  //     items.map((singleItem) =>
+  //       singleItem.id === id
+  //         ? { ...singleItem, completed: !singleItem.completed }
+  //         : singleItem
+  //     )
+  //   );
+  // };
 
-  const deleteItem = (id) => {
-    setItems(items.filter((item) => item.id !== id));
-  };
-  useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(items));
-  }, [items]);
+  // const deleteItem = (id) => {
+  //   setItems(items.filter((item) => item.id !== id));
+  // };
+  // useEffect(() => {
+  //   localStorage.setItem("items", JSON.stringify(items));
+  // }, [items]);
 
   return (
     <div>
@@ -106,23 +106,23 @@ const Navbar = () => {
             <Switch>
               <Route path="/Add">
                 <Add
-                  setText={setText}
-                  setDate={setDate}
-                  setTime={setTime}
-                  timeText={timeText}
-                  dateText={dateText}
-                  handleSubmit={handleSubmit}
-                  text={text}
+                  // setText={setText}
+                  // setDate={setDate}
+                  // setTime={setTime}
+                  // timeText={timeText}
+                  // dateText={dateText}
+                  // handleSubmit={handleSubmit}
+                  // text={text}
                 />
               </Route>
 
               <Route path="/">
                 <MainSection
-                  items={items}
-                  setItems={setItems}
-                  deleteItem={deleteItem}
-                  setEditItems={setEditItems}
-                  itemComplete={itemComplete}
+                  // items={items}
+                  // setItems={setItems}
+                  // deleteItem={deleteItem}
+                  // setEditItems={setEditItems}
+                  // itemComplete={itemComplete}
                 />
               </Route>
             </Switch>

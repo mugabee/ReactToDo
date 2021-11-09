@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { MdDeleteForever } from "react-icons/md";
 import { MdPendingActions } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
@@ -6,7 +7,11 @@ import { ToDoContext } from "../context/ToDoContext";
 import { useContext } from "react";
 
 const MainSection = () => {
-    const {items} = useContext(ToDoContext)
+    const {items, itemComplete, setItems, deleteItem } = useContext(ToDoContext)
+      useEffect(() => {
+      localStorage.setItem("items", JSON.stringify(items))
+  }, [items]
+         )
 
   return (
     <>

@@ -53,17 +53,21 @@ const ProviderToDo = (props) => {
         const deleteItem = (id) => {
             setItems(items.filter((item)=> item.id !==id))
         }
-        // //useEffect(() => {
-        //     localStorage.setItem("items", JSON.stringify(items))
-        // }, [items]
-        // )
+       
 
   const value = {
     items,
     itemComplete,
     deleteItem,
     handleSubmit,
-    getLocalStorage
+    getLocalStorage,
+    setItems,
+    text, 
+    setText,
+    dateText,
+    setDate,
+    timeText,
+    setTime
   };
 return (
     <ToDoContext.Provider value={value}>{props.children}</ToDoContext.Provider>

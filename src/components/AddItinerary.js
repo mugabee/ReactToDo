@@ -1,6 +1,9 @@
 import Button from "./Button";
+import { ToDoContext } from "../context/ToDoContext";
+import { useContext } from "react";
 
-const AddItinerary = ({ text, setText, dateText, setDate, timeText, setTime }) => {
+const AddItinerary = () => {
+    const {text, setText, dateText, setDate, timeText, setTime} = useContext(ToDoContext)
   return (
     <div>
       <input
