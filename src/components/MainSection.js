@@ -11,7 +11,7 @@ const MainSection = ({
   editItems,
   setEditItems,
 }) => {
-  console.log("hello");
+
   return (
     <>
       <article>
