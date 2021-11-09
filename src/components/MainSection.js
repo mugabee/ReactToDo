@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { MdDeleteForever } from "react-icons/md";
 import { MdPendingActions } from "react-icons/md";
-import { FaEdit } from "react-icons/fa";
+// import { FaEdit } from "react-icons/fa";
 import { BsCheckAll } from "react-icons/bs";
 import { ToDoContext } from "../context/ToDoContext";
 import { useContext } from "react";
