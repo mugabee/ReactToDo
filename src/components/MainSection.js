@@ -8,23 +8,29 @@ const MainSection = ({
   setItems,
   deleteItem,
   itemComplete,
-  editItems,
-  setEditItems,
+
 }) => {
 
   return (
     <>
       <article>
         <ul className="bg-gray-200 mx-5 sm:max-w-xl sm:mx-auto rounded-lg mt-4">
-          {items.map(({ id, title, completed }) => (
+          {items.map(({ id, title, dates, timeSet, completed }) => (
             <ul className="flex border-b px-8 border-gray-600 justify-between">
               <div>
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {title}
                 </li>
+                <li key={id} className=" text-black text-3xl py-2  font-bold ">
+                  {timeSet}
+                </li>
+                <li key={id} className=" text-black text-3xl py-2  font-bold ">
+                  {dates}
+                </li>
                 <li className=" text-black    ">
                   {completed ? "completed" : "pending .."}
                 </li>
+                
               </div>
 
               <li className="pt-4 ">
