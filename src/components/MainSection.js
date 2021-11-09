@@ -55,6 +55,7 @@ const MainSection = ({
             <li>
               <p className="text-xl font-bold text-green-500">
                 You have {items.length} Tasks
+                You have {itemComplete.length} Tasks
               </p>
             </li>
             <li>
