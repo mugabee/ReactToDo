@@ -19,7 +19,7 @@ const MainSection = () => {
           {items.map(({ id, title, dates, timeSet, completed }) => (
             <ul className="flex border-b px-8 border-gray-600 justify-between">
               <div>
-                <li key={id} className=" text-black text-3xl py-2  font-bold ">
+                <li key={id} className=" text-black text-2xl py-2  font-bold ">
                   {title}
                 </li>
                 <li key={id} className=" text-black">
