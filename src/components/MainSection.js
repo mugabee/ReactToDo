@@ -25,9 +25,6 @@ const MainSection = () => {
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {timeSet} {dates}
                 </li>
-                <li key={id} className=" text-black text-3xl py-2  font-bold ">
-                  {dates}
-                </li>
                 <li className=" text-black    ">
                   {completed ? "completed" : "pending .."}
                 </li>
