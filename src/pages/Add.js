@@ -1,7 +1,7 @@
 import AddIlinerary from "../components/AddItinerary"
 import Button from "../components/Button"
 
-const About = (props) => {
+const Add = (props) => {
     return (
         <div>
              <form className="flex item-center justify-center mt-10"
@@ -15,6 +15,6 @@ const About = (props) => {
     )
 }
 
-export default About
+export default Add
 
 

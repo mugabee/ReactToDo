@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import {v4 as uuidv4} from "uuid"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from "../pages/About";
+import Add from "../pages/Add";
 
 
 import MainSection from "./MainSection";
@@ -91,7 +91,7 @@ const Navbar = () => {
                 <li className="mr-3">
                   {" "}
                   <Link
-                    to="/About"
+                    to="/Add"
                     className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                   >
                     Add
@@ -109,8 +109,8 @@ const Navbar = () => {
           
         <Switch>
 
-          <Route path="/About">
-            <About setText={setText} handleSubmit={handleSubmit} text={text} />
+          <Route path="/Add">
+            <Add setText={setText} handleSubmit={handleSubmit} text={text} />
           </Route>
          
           <Route path="/">
