@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const AddItinerary = ({ text, setText }) => {
+const AddItinerary = ({ text, setText, date, setDate, time, setTime }) => {
   return (
     <div>
       <input
@@ -18,7 +18,7 @@ const AddItinerary = ({ text, setText }) => {
         placeholder="Enter Your To do item"
         className="py-2 px-14 mt-4 rounded-lg bg-gray-700 text-white tracking-wide"
         value={date}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => setDate(e.target.value)}
       />
       <br />
 
@@ -28,7 +28,7 @@ const AddItinerary = ({ text, setText }) => {
         placeholder="Enter Your To do item"
         className="py-2 px-14 mt-4 rounded-lg bg-gray-700 text-white tracking-wide"
         value={time}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => setTime(e.target.value)}
       />
       <br />
       <Button />
