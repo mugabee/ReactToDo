@@ -1,6 +1,7 @@
 const AddItinerary = ({ text, setText }) => {
     return (
-        <input
+        <div>
+            <input
         type="text"
         name="text"
         placeholder="Enter Your To do item"
@@ -10,6 +11,9 @@ const AddItinerary = ({ text, setText }) => {
         
 
      /> 
+
+        </div>
+        
      
     )
 }
