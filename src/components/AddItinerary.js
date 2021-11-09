@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 const AddItinerary = ({ text, setText }) => {
     return (
         <div>
@@ -11,6 +13,7 @@ const AddItinerary = ({ text, setText }) => {
         
 
      /> 
+     <br/>
      <input
         type="date"
         name="date"
@@ -21,6 +24,8 @@ const AddItinerary = ({ text, setText }) => {
         
 
      /> 
+     <br/>
+     <Button /> 
 
         </div>
         
