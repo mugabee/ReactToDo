@@ -27,8 +27,8 @@ const AddItinerary = ({ text, setText }) => {
         name="time"
         placeholder="Enter Your To do item"
         className="py-2 px-14 mt-4 rounded-lg bg-gray-700 text-white tracking-wide"
-        //value={time}
-        //onChange={(e) => setText(e.target.value)}
+        value={time}
+        onChange={(e) => setText(e.target.value)}
       />
       <br />
       <Button />
