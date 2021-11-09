@@ -57,13 +57,7 @@ const Navbar = () => {
               </Route>
 
               <Route path="/">
-                <MainSection
-                  // items={items}
-                  // setItems={setItems}
-                  // deleteItem={deleteItem}
-                  // setEditItems={setEditItems}
-                  // itemComplete={itemComplete}
-                />
+                <MainSection/>
               </Route>
             </Switch>
             <Footer />
