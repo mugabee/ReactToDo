@@ -17,7 +17,7 @@ const MainSection = () => {
       <article>
         <ul className="bg-gray-200 mx-5 sm:max-w-xl sm:mx-auto rounded-lg mt-4">
           {items.map(({ id, title, dates, timeSet, completed }) => (
-            <div className="flex border-b px-8 border-gray-600 justify-between">
+            <ul className="flex border-b px-8 border-gray-600 justify-between">
               <div>
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {title}
@@ -52,7 +52,7 @@ const MainSection = () => {
                   <MdDeleteForever className="text-red-500  hover:text-green-500" />
                 </button>
               </div>
-            </div>
+            </ul>
           ))}
           <ul className="flex items-center justify-between px-5 py-3">
             <li>
