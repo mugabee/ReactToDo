@@ -22,7 +22,7 @@ const MainSection = () => {
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {title}
                 </li>
-                <li key={id} className=" text-black  ">
+                <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {timeSet} {dates}
                 </li>
                 <li className=" text-black    ">
@@ -30,7 +30,7 @@ const MainSection = () => {
                 </li>
               </div>
 
-              <div className="pt-4 ">
+              <li className="pt-4 ">
                 <button className="text-xl mx-2">
                   <FaEdit className="text-red-500 hover:text-green-500" />
                 </button>
@@ -51,7 +51,7 @@ const MainSection = () => {
                 >
                   <MdDeleteForever className="text-red-500  hover:text-green-500" />
                 </button>
-              </div>
+              </li>
             </ul>
           ))}
           <ul className="flex items-center justify-between px-5 py-3">
