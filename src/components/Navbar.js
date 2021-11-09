@@ -41,6 +41,8 @@ const Navbar = () => {
             //Using the spread operator for the old items to  remain while adding the new ones
             setItems([newItems, ...items])
             setText("")
+            setDate("")
+            setTime("")
   
         }
 
