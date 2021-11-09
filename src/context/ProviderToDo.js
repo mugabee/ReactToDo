@@ -14,7 +14,7 @@ const ProviderToDo = (props) => {
     }
   };
 
-  const [editItems, setEditItems] = useState(null);
+  //const [editItems, setEditItems] = useState(null);
   const [text, setText] = useState("");
   const [dateText, setDate] = useState("");
   const [timeText, setTime] = useState("");
