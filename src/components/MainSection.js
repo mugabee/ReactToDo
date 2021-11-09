@@ -14,10 +14,17 @@ const MainSection = ({ items, setItems, deleteItem, itemComplete, editItems, set
                 {items.map(({id, title, completed }) => (
                     <ul className="flex border-b px-8 border-gray-600 justify-between">
                         <li key={id}
-                        className="todo-list text-black  py-3   "
+                        className="todo-list text-black  py-2  "
                         >
                             {title}
+                        
+                            <li 
+                        className="todo-list text-black    "
+                        >
+                            { completed ? ("pending ..") : ("Completed")}
                         </li>
+                        </li>
+                        
                         <li className="pt-4 ">
                         <button className="text-xl mx-2">
                             <FaEdit className="text-red-500 hover:text-green-500" />
