@@ -13,17 +13,20 @@ const MainSection = ({ items, setItems, deleteItem, itemComplete, editItems, set
             <ul className="bg-gray-200 mx-5 sm:max-w-xl sm:mx-auto rounded-lg mt-4">
                 {items.map(({id, title, completed }) => (
                     <ul className="flex border-b px-8 border-gray-600 justify-between">
-                        <li key={id}
-                        className="todo-list text-black  py-2  "
-                        >
-                            {title}
-                        
+                        <div>
+                            <li key={id}
+                            className=" text-black py-2  font-bold "
+                            >
+                                {title}
+                            
+                            
+                            </li>
                             <li 
-                        className="todo-list text-black    "
-                        >
-                            { completed ? ("pending ..") : ("Completed")}
-                        </li>
-                        </li>
+                            className=" text-black    "
+                            >
+                                { completed ? ("completed") : ("pending ..")}
+                            </li>
+                        </div>
                         
                         <li className="pt-4 ">
                         <button className="text-xl mx-2">
