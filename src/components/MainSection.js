@@ -2,14 +2,11 @@ import { MdDeleteForever } from "react-icons/md";
 import { MdPendingActions } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import { BsCheckAll } from "react-icons/bs";
+import { ToDoContext } from "../context/ToDoContext";
+import { useContext } from "react";
 
-const MainSection = ({
-  items,
-  setItems,
-  deleteItem,
-  itemComplete,
-
-}) => {
+const MainSection = () => {
+    const {items} = useContext(ToDoContext)
 
   return (
     <>
