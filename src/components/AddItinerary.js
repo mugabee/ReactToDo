@@ -11,6 +11,16 @@ const AddItinerary = ({ text, setText }) => {
         
 
      /> 
+     <input
+        type="date"
+        name="date"
+        placeholder="Enter Your To do item"
+        className="py-2 px-14 rounded-lg bg-gray-700 text-white tracking-wide"
+        //value={date}
+        //onChange={(e) => setText(e.target.value)}
+        
+
+     /> 
 
         </div>
         
