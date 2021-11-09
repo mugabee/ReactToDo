@@ -43,13 +43,15 @@ const Navbar = () => {
         const itemComplete = (id) =>{
             console.log(id)
             setItems(
-                items.map((singleItem) =>{
-                    if(singleItem.id === id) {
-                        return{...items, completed: !singleItem.completed}
-                    }
-                    return singleItem;
+                items.map((singleItem) => 
+                    singleItem.id === id ? {...singleItem, completed: !singleItem.completed}
+                    : singleItem
+                    // if(singleItem.id === id) {
+                       // return{...items, completed: !singleItem.completed}
+                    //}
+                   // return singleItem;
     
-                })
+                )
             )
         }
     
@@ -99,22 +101,26 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
+        <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
+                
+                   
+                <Title /> 
+
+          
         <Switch>
+
           <Route path="/About">
             <About setText={setText} handleSubmit={handleSubmit} text={text} />
           </Route>
          
           <Route path="/">
-          <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
-                
-                   
-                <Title /> 
                 <MainSection items={items} setItems={setItems} deleteItem={deleteItem} setEditItems={setEditItems} itemComplete={itemComplete}/>
-              <Footer />
-            </div> 
+            
       
         </Route>
         </Switch>
+        <Footer />
+            </div> 
       </Router>
     </div>
   );

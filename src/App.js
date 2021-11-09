@@ -24,7 +24,7 @@ const App = () => {
             
             <main className="lg:pb-96 lg:pt-10 bg-gradient-to-r from-purple-400 via-blue-700 to-indigo-400">
                 <Navbar />
-                <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
+              {/* <div className="lg:mx-64 border rounded-2xl border-red-100 bg-black bg-opacity-700 "> 
                 
                    
                     <Title />         
@@ -35,10 +35,10 @@ const App = () => {
                 
                     <Button />
         
-                    </form>   */}
+                    </form>   
                                         <Footer />
-                </div> 
-            </main> 
+                </div> */}
+            </main>  
 
       
         </>

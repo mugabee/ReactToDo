@@ -23,14 +23,14 @@ const MainSection = ({ items, setItems, deleteItem, itemComplete, editItems, set
                             <FaEdit className="text-red-500 hover:text-green-500" />
                         </button>
                         <button className="text-xl mx-2 "
-                        onClick ={() => console.log(id)}  >
+                        onClick ={() => itemComplete(id)}  >
                             { completed ? <BsCheckAll className="text-red-500  hover:text-green-500" /> : <MdPendingActions className="text-red-500  hover:text-green-500" />
                             }
                             
                             
                         </button>
 
-                        <button onclick>submit</button>
+                        
                         <button className="text-xl mx-2 "
                         onClick ={() => deleteItem(id)}  >
                             <MdDeleteForever className="text-red-500  hover:text-green-500" />
