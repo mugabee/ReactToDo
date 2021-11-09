@@ -7,11 +7,10 @@ import { ToDoContext } from "../context/ToDoContext";
 import { useContext } from "react";
 
 const MainSection = () => {
-    const {items, itemComplete, setItems, deleteItem } = useContext(ToDoContext)
-      useEffect(() => {
-      localStorage.setItem("items", JSON.stringify(items))
-  }, [items]
-         )
+  const { items, itemComplete, setItems, deleteItem } = useContext(ToDoContext);
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
 
   return (
     <>
@@ -32,7 +31,6 @@ const MainSection = () => {
                 <li className=" text-black    ">
                   {completed ? "completed" : "pending .."}
                 </li>
-                
               </div>
 
               <li className="pt-4 ">
@@ -63,7 +61,6 @@ const MainSection = () => {
             <li>
               <p className="text-xl font-bold text-green-500">
                 You have {items.length} Tasks
-                
               </p>
             </li>
             <li>
