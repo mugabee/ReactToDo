@@ -23,8 +23,8 @@ const Navbar = () => {
     
      const [editItems, setEditItems] = useState(null)
         const [text, setText] = useState("")
-        const [date, setDate] = useState("")
-        const [time, setTime] = useState("")
+        const [dateText, setDate] = useState("")
+        const [timeText, setTime] = useState("")
         const [items, setItems] = useState(getLocalStorage())
         console.log(items);
 
@@ -34,8 +34,8 @@ const Navbar = () => {
             const newItems ={
                 id: uuidv4(),
                 title: text,
-                dates: date,
-                timeSet: time,
+                dates: dateText,
+                timeSet: timeText,
                 completed: false,
             }
             //Using the spread operator for the old items to  remain while adding the new ones
@@ -109,7 +109,7 @@ const Navbar = () => {
         <Switch>
 
           <Route path="/Add">
-            <Add setText={setText} setDate={setDate} setTime={setTime} time={time} date={date} handleSubmit={handleSubmit} text={text} />
+            <Add setText={setText} setDate={setDate} setTime={setTime} timeText={timeText} dateText={dateText} handleSubmit={handleSubmit} text={text} />
           </Route>
          
           <Route path="/">
