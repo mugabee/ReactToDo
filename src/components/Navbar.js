@@ -45,12 +45,7 @@ const Navbar = () => {
             setItems(
                 items.map((singleItem) => 
                     singleItem.id === id ? {...singleItem, completed: !singleItem.completed}
-                    : singleItem
-                    // if(singleItem.id === id) {
-                       // return{...items, completed: !singleItem.completed}
-                    //}
-                   // return singleItem;
-    
+                    : singleItem      
                 )
             )
         }
