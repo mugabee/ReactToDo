@@ -22,6 +22,8 @@ const MainSection = () => {
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {title}
                 </li>
+                {/* <div>
+                </div> */}
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {timeSet}
                 </li>
