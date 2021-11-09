@@ -53,15 +53,7 @@ const Navbar = () => {
 
             <Switch>
               <Route path="/Add">
-                <Add
-                  // setText={setText}
-                  // setDate={setDate}
-                  // setTime={setTime}
-                  // timeText={timeText}
-                  // dateText={dateText}
-                  // handleSubmit={handleSubmit}
-                  // text={text}
-                />
+                <Add/>
               </Route>
 
               <Route path="/">
