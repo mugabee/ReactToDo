@@ -10,6 +10,7 @@ const AddItinerary = ({ text, setText }) => {
         
 
      /> 
+     
     )
 }
 
