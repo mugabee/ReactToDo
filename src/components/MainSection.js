@@ -22,7 +22,7 @@ const MainSection = () => {
                 <li key={id} className=" text-black text-3xl py-2  font-bold ">
                   {title}
                 </li>
-                <li key={id} className=" text-black text-3xl py-2  font-bold ">
+                <li key={id} className=" text-black">
                   {timeSet} {dates}
                 </li>
                 <li className=" text-black    ">
@@ -31,11 +31,11 @@ const MainSection = () => {
               </div>
 
               <li className="pt-4 ">
-                <button className="text-xl mx-2">
+                {/* <button className="text-xl mx-2">
                   <FaEdit className="text-red-500 hover:text-green-500" />
-                </button>
+                </button> */}
                 <button
-                  className="text-xl mx-2 "
+                  className="text-xl mx-2 py-2 "
                   onClick={() => itemComplete(id)}
                 >
                   {completed ? (
@@ -44,9 +44,10 @@ const MainSection = () => {
                     <MdPendingActions className="text-red-500  hover:text-green-500" />
                   )}
                 </button>
+                <br/>
 
                 <button
-                  className="text-xl mx-2 "
+                  className="text-xl mx-2 py-2 "
                   onClick={() => deleteItem(id)}
                 >
                   <MdDeleteForever className="text-red-500  hover:text-green-500" />
