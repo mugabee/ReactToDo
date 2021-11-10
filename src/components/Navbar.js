@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Add from "../pages/Add";
 import About from "../pages/About";
 import Contacts from "../pages/Contacts";
+import Error from "../pages/NotWorking";
 
 import ProviderToDo from "../context/ProviderToDo";
 import MainSection from "./MainSection";
@@ -83,6 +84,9 @@ const Navbar = () => {
 
               <Route path="/" exact>
                 <MainSection/>
+              </Route>
+              <Route path="*" exact>
+                <Error/>
               </Route>
             </Switch>
             <Footer />
