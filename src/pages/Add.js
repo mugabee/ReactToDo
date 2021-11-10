@@ -9,7 +9,7 @@ const Add = (props) => {
         <div>
              <form className="flex item-center justify-center mt-10"
             onSubmit={handleSubmit}>  
-              <AddIlinerary /> {/*setText={props.setText} dateText={props.dateText} setDate={props.setDate} handleSubmit={props.handleSubmit} text={props.text} timeText={props.timeText} setTime={props.setTime}  />   */}
+              <AddIlinerary /> 
              </form>  
             
         </div>
