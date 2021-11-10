@@ -74,15 +74,15 @@ const Navbar = () => {
               <Route path="/Add">
                 <Add/>
               </Route>
-
-              <Route path="/">
-                <MainSection/>
-              </Route>
               <Route path="/About">
                 <About/>
               </Route>
               <Route path="/Contacts">
                 <Contacts/>
+              </Route>
+
+              <Route path="/" exact>
+                <MainSection/>
               </Route>
             </Switch>
             <Footer />

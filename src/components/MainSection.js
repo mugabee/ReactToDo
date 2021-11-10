@@ -23,7 +23,9 @@ const MainSection = () => {
                   {title}
                 </li>
                 <li key={id} className=" text-black">
-                  {timeSet} {dates}
+                {` ${new Date(dates).toLocaleString('en-US',{weekday:'long',}).substr(0,3)}  ${new Date(dates).toLocaleString('en-US',{month:'long',}).substr(0,3)}`}
+                   
+                { } at {timeSet}
                 </li>
                 <li className=" text-black    ">
                   {completed ? "completed" : "pending .."}

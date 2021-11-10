@@ -22,7 +22,7 @@ const ProviderToDo = (props) => {
   console.log(items);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+   // e.preventDefault();
 
     const newItems = {
       id: uuidv4(),
