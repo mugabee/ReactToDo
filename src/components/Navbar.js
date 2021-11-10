@@ -1,6 +1,8 @@
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Add from "../pages/Add";
+import About from "../pages/About";
+import Contacts from "../pages/Contacts";
 
 import ProviderToDo from "../context/ProviderToDo";
 import MainSection from "./MainSection";
@@ -43,6 +45,24 @@ const Navbar = () => {
                       Add
                     </Link>
                   </li>
+                  <li className="mr-3">
+                    {" "}
+                    <Link
+                      to="/About"
+                      className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li className="mr-3">
+                    {" "}
+                    <Link
+                      to="/Contacts"
+                      className="inline-block md:border border-black hover:bg-blue-200 text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                    >
+                      Contacts
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -57,6 +77,12 @@ const Navbar = () => {
 
               <Route path="/">
                 <MainSection/>
+              </Route>
+              <Route path="/About">
+                <About/>
+              </Route>
+              <Route path="/Contacts">
+                <Contacts/>
               </Route>
             </Switch>
             <Footer />
