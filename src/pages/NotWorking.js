@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Contacts from "../pages/Contacts";
+import MainSection from "./MainSection";
 
 const NotWorking = () => {
   return (
